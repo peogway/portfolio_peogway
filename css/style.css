@@ -483,25 +483,27 @@ html[data-theme='dark'] .theme-toggle {
 		left: 0;
 		right: 0;
 		backdrop-filter: blur(14px);
-		background: color-mix(in srgb, var(--bg-alt) 10%, transparent);
+		background: color-mix(in srgb, var(--bg-alt) 50%, transparent);
 		transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
 	}
 
 	.mobile-menu-panel-top {
 		top: 0;
-		height: 30%;
-		background: color-mix(in srgb, var(--bg-alt) 40%, transparent);
+		height: 25%;
+		background: color-mix(in srgb, var(--bg-alt) 50%, transparent);
 		transform: translateX(100%);
 		transition-delay: 0.08s;
-		border-radius: 30px;
+		border-bottom-left-radius: 8px;
+		border-bottom-right-radius: 8px;
 	}
 
 	.mobile-menu-panel-bottom {
 		bottom: 0;
-		height: 70%;
+		height: 75%;
 		transform: translateX(-100%);
 		transition-delay: 0s;
-		border-radius: 30px;
+		border-top-right-radius: 8px;
+		border-top-left-radius: 8px;
 	}
 
 	.mobile-menu-panels.open {
@@ -525,8 +527,8 @@ html[data-theme='dark'] .theme-toggle {
 	}
 
 	.mobile-menu-avatar {
-		width: 96px;
-		height: 96px;
+		width: 72px;
+		height: 72px;
 		border: 1px solid var(--border);
 		border-radius: 50%;
 		overflow: hidden;
@@ -544,7 +546,7 @@ html[data-theme='dark'] .theme-toggle {
 		flex-direction: column;
 		align-items: stretch;
 		justify-content: center;
-		gap: 24px;
+		gap: 8px;
 		height: 100%;
 		padding: 40px 28px;
 	}
@@ -555,7 +557,7 @@ html[data-theme='dark'] .theme-toggle {
 		justify-content: center;
 		padding: 10px 0;
 		color: var(--text);
-		font-size: 2rem;
+		font-size: 24px;
 		font-weight: 600;
 		text-decoration: none;
 		transform: translateX(100%);
