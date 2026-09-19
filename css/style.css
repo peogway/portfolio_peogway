@@ -109,12 +109,6 @@ ul {
 	border-top: none;
 }
 
-@media (max-width: 600px) {
-	.section {
-		padding: 64px 0;
-	}
-}
-
 /* =====================================================
    Page layout — main column + sidebar
    ===================================================== */
@@ -156,6 +150,10 @@ ul {
 	.page-component-about {
 		padding-bottom: 64px !important;
 	}
+	.contact-section,
+	.nav-link[href='#contact'] {
+		display: none;
+	}
 }
 
 .section-inline {
@@ -182,8 +180,10 @@ ul {
 }
 
 @media (max-width: 600px) {
+	.section {
+		padding: 64px 0;
+	}
 	.layout {
-		padding-top: calc(var(--nav-height) + 32px);
 		padding-bottom: 64px;
 		gap: 48px;
 	}
@@ -340,7 +340,7 @@ html[data-theme='dark'] .theme-toggle {
 	height: 1.35em;
 }
 
-@media (min-width: 721px) {
+@media (min-width: 599) {
 	.nav-menu {
 		margin-right: 10px;
 	}
@@ -370,7 +370,7 @@ html[data-theme='dark'] .theme-toggle {
 	background: var(--text);
 	border-radius: 2px;
 	transition:
-		transform 0.25s ease,
+		transform 0.5s ease,
 		opacity 0.25s ease;
 }
 .nav-toggle.active span:nth-child(1) {
@@ -388,7 +388,7 @@ html[data-theme='dark'] .theme-toggle {
 	display: none;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 959px) {
 	.navbar {
 		box-shadow: none;
 	}
@@ -597,6 +597,11 @@ html[data-theme='dark'] .theme-toggle {
 		text-underline-offset: 8px;
 		transition: none;
 	}
+
+	#education-title {
+		font-weight: 570;
+		font-size: 1rem;
+	}
 }
 
 /* =====================================================
@@ -780,12 +785,12 @@ html[data-theme='dark'] .theme-toggle {
 	color: var(--text-muted);
 }
 
-@media (max-width: 520px) {
-	.hero-top {
+@media (max-width: 560px) {
+	/* .hero-top {
 		flex-direction: column;
 		align-items: flex-start;
 		gap: 16px;
-	}
+	} */
 	.avatar {
 		width: 108px;
 		height: 108px;
@@ -813,10 +818,6 @@ html[data-theme='dark'] .theme-toggle {
 	.sidebar .about-details {
 		display: none;
 	}
-	.contact-section,
-	.nav-link[href='#contact'] {
-		display: none;
-	}
 
 	.mobile-about-details {
 		display: block;
@@ -832,7 +833,7 @@ html[data-theme='dark'] .theme-toggle {
 
 	.hero-block {
 		min-height: auto;
-		padding: 48px 0 24px;
+		padding: 12px 0 24px;
 	}
 
 	.hero-actions {
@@ -1337,4 +1338,3 @@ html[data-theme='dark'] .footer-copy {
 		transform: none !important;
 	}
 }
-
