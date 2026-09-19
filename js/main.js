@@ -38,6 +38,23 @@ function setupReveal() {
 	elements.forEach((element) => observer.observe(element))
 }
 
+function setupGetInTouchLink() {
+	const link = document.getElementById('get-in-touch')
+
+	if (!link) {
+		return
+	}
+
+	const sidebarQuery = window.matchMedia('(min-width: 960px)')
+
+	const updateLinkTarget = () => {
+		link.setAttribute('href', sidebarQuery.matches ? '#home' : '#contact')
+	}
+
+	updateLinkTarget()
+	sidebarQuery.addEventListener('change', updateLinkTarget)
+}
+
 async function init() {
 	await loadComponents()
 
@@ -54,6 +71,7 @@ async function init() {
 	sidebarRoot.innerHTML = await sidebarResponse.text()
 	footerRoot.innerHTML = await footerResponse.text()
 
+	setupGetInTouchLink()
 	setupReveal()
 }
 
