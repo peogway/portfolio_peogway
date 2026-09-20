@@ -788,14 +788,14 @@ html[data-theme='dark'] .theme-toggle {
 }
 
 @media (max-width: 560px) {
-	/* .hero-top {
+	.hero-top {
 		flex-direction: column;
 		align-items: flex-start;
 		gap: 16px;
-	} */
+	}
 	.avatar {
-		width: 108px;
-		height: 108px;
+		width: 64px;
+		height: 64px;
 	}
 	.layout {
 		margin-left: 18px;
