@@ -796,6 +796,7 @@ html[data-theme='dark'] .theme-toggle {
 	.avatar {
 		width: 64px;
 		height: 64px;
+		display: none;
 	}
 	.layout {
 		margin-left: 18px;
