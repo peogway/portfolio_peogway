@@ -823,6 +823,20 @@ html[data-theme='dark'] .theme-toggle {
 .tech-highlight-godot {
 	text-decoration-color: #478cbf; /* Godot's actual brand blue */
 }
+.project-media {
+	margin: 16px 0 20px;
+	border-radius: 10px;
+	overflow: hidden;
+	border: 1px solid var(--border);
+	box-shadow: var(--shadow);
+}
+.project-media img {
+	display: block;
+	width: 100%;
+	height: auto;
+	aspect-ratio: 16 / 9;
+	object-fit: cover;
+}
 
 @media (max-width: 560px) {
 	.mobile-menu-panels {
