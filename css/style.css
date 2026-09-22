@@ -810,6 +810,20 @@ html[data-theme='dark'] .theme-toggle {
 	text-underline-offset: 2px;
 }
 
+.tech-highlight {
+	font-weight: 700;
+	text-decoration: underline;
+	text-underline-offset: 2px;
+}
+
+.tech-highlight-js {
+	text-decoration-color: #f7df1e; /* JavaScript yellow */
+}
+
+.tech-highlight-godot {
+	text-decoration-color: #478cbf; /* Godot's actual brand blue */
+}
+
 @media (max-width: 560px) {
 	.mobile-menu-panels {
 		inset: 24px 0 0;
