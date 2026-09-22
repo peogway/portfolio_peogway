@@ -1,3 +1,6 @@
+---
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -22,10 +25,16 @@
 		/>
 
 		<link rel="stylesheet" href="css/style.css" />
+		<link
+			rel="preload"
+			as="image"
+			href="assets/avatar.jpg"
+			fetchpriority="high"
+		/>
 	</head>
 
 	<body>
-		<div id="navbar-root"></div>
+		<div id="navbar-root">{% include navbar.html %}</div>
 
 		<main>
 			<div class="layout">
@@ -33,33 +42,40 @@
 					<div
 						id="home"
 						class="page-component page-component-home hero-block page-section"
-						data-component="components/home.html"
-					></div>
+					>
+						{% include home.html %}
+					</div>
 					<div
 						id="about"
 						class="page-component page-component-about hero-about page-section"
-						data-component="components/about.html"
-					></div>
+					>
+						{% include about.html %}
+					</div>
 					<div
 						id="experience"
 						class="page-component page-component-experience section-inline page-section"
-						data-component="components/experience.html"
-					></div>
+					>
+						{% include experience.html %}
+					</div>
 					<div
 						id="contact"
 						class="page-component page-component-contact section-inline contact-section page-section"
-						data-component="components/contact.html"
-					></div>
+					>
+						{% include contact.html %}
+					</div>
 				</div>
 
-				<aside id="sidebar-root" class="sidebar"></aside>
+				<aside id="sidebar-root" class="sidebar">
+					{% include sidebar.html %}
+				</aside>
 			</div>
 		</main>
 
-		<footer id="footer-root" class="site-footer"></footer>
+		<footer id="footer-root" class="site-footer">
+			{% include footer.html %}
+		</footer>
 
 		<script src="js/navbar.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>
-
