@@ -775,7 +775,7 @@ html[data-theme='dark'] .theme-toggle {
 }
 
 .page-section {
-	scroll-margin-top: calc(var(--nav-height) + 24px);
+	scroll-margin-top: calc(var(--nav-height) + 8px);
 }
 
 .hero-actions {
