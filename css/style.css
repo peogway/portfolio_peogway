@@ -787,13 +787,24 @@ html[data-theme='dark'] .theme-toggle {
 	max-width: none;
 	color: var(--text-muted);
 }
-.hero-about {
+.hero-bio {
 	border-left: 3px solid var(--primary);
 	padding-left: 20px;
 	margin-bottom: 32px;
 }
 
-.hero-about a {
+.hero-bio a {
+	font-weight: 600;
+	text-decoration: underline;
+	text-underline-offset: 2px;
+}
+.hero-description {
+	border-left: 3px solid var(--primary);
+	padding-left: 20px;
+	margin-bottom: 32px;
+}
+
+.hero-description a {
 	font-weight: 600;
 	text-decoration: underline;
 	text-underline-offset: 2px;
