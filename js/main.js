@@ -55,25 +55,28 @@ function setupGetInTouchLink() {
 	sidebarQuery.addEventListener('change', updateLinkTarget)
 }
 
-async function init() {
-	await loadComponents()
+// async function init() {
+// 	await loadComponents()
 
-	const sidebarRoot = document.getElementById('sidebar-root')
-	const footerRoot = document.getElementById('footer-root')
+// 	const sidebarRoot = document.getElementById('sidebar-root')
+// 	const footerRoot = document.getElementById('footer-root')
 
-	const sidebarResponse = await fetch('components/sidebar.html')
-	const footerResponse = await fetch('components/footer.html')
+// 	const sidebarResponse = await fetch('components/sidebar.html')
+// 	const footerResponse = await fetch('components/footer.html')
 
-	if (!sidebarResponse.ok || !footerResponse.ok) {
-		throw new Error('Failed to load shared components')
-	}
+// 	if (!sidebarResponse.ok || !footerResponse.ok) {
+// 		throw new Error('Failed to load shared components')
+// 	}
 
-	sidebarRoot.innerHTML = await sidebarResponse.text()
-	footerRoot.innerHTML = await footerResponse.text()
+// 	sidebarRoot.innerHTML = await sidebarResponse.text()
+// 	footerRoot.innerHTML = await footerResponse.text()
 
-	setupGetInTouchLink()
-	setupReveal()
-}
+// 	setupGetInTouchLink()
+// 	setupReveal()
+// }
 
-init().catch(console.error)
+// init().catch(console.error)
+
+setupGetInTouchLink()
+setupReveal()
 
