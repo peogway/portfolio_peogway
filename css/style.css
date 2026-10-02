@@ -794,6 +794,10 @@ html[data-theme='dark'] .theme-toggle {
 	margin-bottom: 32px;
 }
 
+.hero-bio p {
+	margin-bottom: 0;
+}
+
 .hero-bio a {
 	font-weight: 600;
 	text-decoration: underline;
