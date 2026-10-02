@@ -21,16 +21,26 @@
 			</div>
 		</div>
 		<p class="experience-desc">
-			Worked in a 9‑person agile Scrum team to build Keys2Balance's training
-			platform &mdash; a full‑stack learning management system with Admin,
-			Trainer, and Participant roles &mdash; from scratch. Developed features
-			across the React/Redux frontend and the Node.js/Express backend,
-			integrated them with a PostgreSQL database, and helped deploy the
-			application to production on Fly.io. Took part in daily stand‑ups, sprint
-			planning, and retrospectives, ran frontend tutorials to align the team on
-			structure and style, reviewed teammates' code, and helped keep integration
-			and code quality on track through the final sprints.
+			Worked in a 9-person Agile/Scrum team to build Keys2Balance's full-stack
+			Learning Management System (LMS) from scratch across 6 sprints, supporting
+			150+ users across Admin, Trainer, and Participant roles.
 		</p>
+
+		<ul class="experience-desc-list">
+			<li>
+				Developed end-to-end functionality using React/Redux and
+				Node.js/Express, implementing 44 REST API endpoints backed by a
+				PostgreSQL database with 10 entities.
+			</li>
+			<li>
+				Used Git/GitHub for version control, collaborative development, and code
+				reviews, and contributed to production deployment on Fly.io.
+			</li>
+			<li>
+				Led frontend tutorials and reviewed teammates' code, helping maintain
+				consistent project structure, coding practices, and code quality.
+			</li>
+		</ul>
 		<ul class="chip-list chip-list-small">
 			<li class="chip">React</li>
 			<li class="chip">Node.js</li>
@@ -67,11 +77,22 @@
 			</div>
 		</div>
 		<p class="experience-desc">
-			A project management web app built with React, Express, and MongoDB. Users
-			can create and categorize projects, manage tasks with priorities, sort by
-			name, time, or priority, view recent completions, and track overall
-			progress.
+			Built and deployed a full-stack project management app with React,
+			Express.js, and MongoDB, featuring 21 REST API endpoints across 4
+			collections and JWT-based authentication.
 		</p>
+
+		<ul class="experience-desc-list">
+			<li>
+				Implemented project, category, and task management with priority levels,
+				sorting, completion tracking, and a dashboard showing overall progress.
+			</li>
+			<li>
+				Developed 8 routes with 36 React components and Redux Toolkit state
+				management, supporting 3 languages (English, Finnish, Vietnamese), and
+				deployed with Docker on Fly.io.
+			</li>
+		</ul>
 		<div class="project-media">
 			<img
 				src="../assets/screenshots/prj2.png"
@@ -121,15 +142,34 @@
 			</div>
 		</div>
 		<p class="experience-desc">
-			Developed a 2D action-survival platformer in Godot 4 using GDScript as a
-			self-directed game development project. Built core gameplay systems from
-			scratch, including player movement, combat, combo attacks, enemy waves,
-			power-ups, upgrades, physics, and local 2-player co-op. Trained a
-			reinforcement-learning pathfinding model in Python and integrated it into
-			the game to control dynamic enemy chase behavior. Worked across gameplay
-			programming, AI integration, game systems, and overall project development
-			from concept to a playable final build.
+			Designed and built a 2D action-survival platformer solo in Godot 4 (~3,000
+			lines of GDScript, 39 scripts, 32 scenes), with 2 playable characters,
+			local 2-player mode, and endless wave progression across 2 difficulty
+			modes.
 		</p>
+
+		<ul class="experience-desc-list">
+			<li>
+				Trained a reinforcement-learning enemy-chase agent in Python
+				(Stable-Baselines3) with an 8-feature observation space and a custom
+				shaped reward, then integrated it into the game via ONNX to drive enemy
+				pathfinding.
+			</li>
+			<li>
+				Implemented 3-hit combo combat with damage scaling by combo step and
+				player level, XP-based leveling, and platformer physics including
+				multi-jump, knockback, and breakable chests.
+			</li>
+			<li>
+				Built a wave system where enemy count grows 40% per wave and enemy HP
+				scales each wave, with weighted chest loot (coins, HP, shield, speed
+				boost) and a coin shop for permanent damage upgrades.
+			</li>
+			<li>
+				Added persistent save data for high scores and settings, and took the
+				project from concept to a playable public build on itch.io.
+			</li>
+		</ul>
 		<div class="project-media">
 			<img
 				src="../assets/screenshots/prj3.png"
@@ -178,16 +218,36 @@
 			</div>
 		</div>
 		<p class="experience-desc">
-			Developed a full-stack blog-sharing web app in Next.js (App Router) and
-			TypeScript as a self-directed project. Built the complete feature set from
-			scratch, including credential-based authentication with NextAuth and
-			bcrypt password hashing, a PostgreSQL database schema managed with Drizzle
-			ORM, and server actions for creating and liking blogs, managing user
-			profiles, and maintaining a personal reading list. Styled the UI with
-			Tailwind CSS and wrote end-to-end tests with Playwright to validate core
-			user flows. Worked across frontend, backend, database design, and testing
-			to take the project from schema design to a fully functional deployed app.
+			Built a full-stack blog-sharing platform with Next.js 16, React 19,
+			TypeScript, and PostgreSQL (Neon) via Drizzle ORM, covering
+			authentication, blog publishing, likes, user profiles, and personal
+			reading lists across 9 routes.
 		</p>
+
+		<ul class="experience-desc-list">
+			<li>
+				Designed a 3-table relational schema with foreign-key constraints and
+				evolved it through 8 versioned Drizzle migrations; implemented 6
+				type-safe server actions covering blog creation, likes, and reading-list
+				management.
+			</li>
+			<li>
+				Secured the app with NextAuth credential login (JWT sessions) and bcrypt
+				password hashing, plus server-side form validation and session checks on
+				every protected action; added a Bearer-token REST endpoint with per-user
+				API tokens.
+			</li>
+			<li>
+				Wrote 28 Playwright end-to-end tests across 4 suites, covering
+				registration, login, blog CRUD, filtering, and reading-list flows, and
+				automated them in a GitHub Actions CI pipeline that runs on every push
+				and pull request.
+			</li>
+			<li>
+				Styled a responsive UI with Tailwind CSS v4 and added case-insensitive
+				blog search.
+			</li>
+		</ul>
 		<div class="project-media">
 			<img
 				src="../assets/screenshots/prj4.png"
@@ -217,4 +277,3 @@
 		</ul>
 	</li>
 </ul>
-

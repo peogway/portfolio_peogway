@@ -1161,6 +1161,27 @@ html[data-theme='dark'] .theme-toggle {
 	border-radius: 6px;
 	background: var(--chip-bg);
 }
+
+.experience-item {
+	gap: 3px;
+}
+
+.experience-item .chip {
+	border-radius: 5px !important;
+	background: #f3f4f6 !important;
+	border: 0.5px solid var(--chip-bg-hover) !important;
+	border-top: 2.5px solid var(--chip-bg-hover) !important;
+	border-right: 3px solid var(--chip-bg-hover) !important;
+	padding: 2px 7px !important;
+	font-size: 0.8rem !important;
+}
+
+.experience-item .chip:hover {
+	color: var(--text);
+	/* background: var(--chip-bg-hover) !important; */
+	transform: none;
+}
+
 .chip {
 	font-size: 0.88rem;
 	font-weight: 500;
@@ -1316,10 +1337,21 @@ html[data-theme='dark'] .theme-toggle {
 .experience-desc {
 	color: var(--text);
 	font-size: 0.95rem;
-	margin: 8px 0 18px;
+	line-height: 1.35;
+	margin: 8px 0 10px;
 	max-width: none;
 }
+.experience-desc-list {
+	margin: 0;
+	font-size: 0.85rem;
+	line-height: 1.35;
+	list-style: disc;
+	margin-bottom: 18px;
+}
 
+.experience-desc-list li {
+	margin-bottom: 1px;
+}
 /* =====================================================
    Contact
    ===================================================== */
