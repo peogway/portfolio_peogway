@@ -1178,6 +1178,7 @@ html[data-theme='dark'] .theme-toggle {
 	border-right: 3px solid var(--chip-bg-hover) !important;
 	padding: 2px 7px !important;
 	font-size: 0.8rem !important;
+	color: var(--text);
 }
 
 .experience-item .chip:hover {
