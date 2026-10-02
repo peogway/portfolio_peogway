@@ -1178,11 +1178,11 @@ html[data-theme='dark'] .theme-toggle {
 	border-right: 3px solid var(--chip-bg-hover) !important;
 	padding: 2px 7px !important;
 	font-size: 0.8rem !important;
-	color: var(--text);
+	color: var(--text) !important;
 }
 
 .experience-item .chip:hover {
-	color: var(--text);
+	/* color: var(--text); */
 	/* background: var(--chip-bg-hover) !important; */
 	transform: none;
 }
